@@ -5,9 +5,11 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Title and buttons space */
-    padding: 0 50px; /* Adds pspacing for banner */
+    justify-content: space-between;
+    padding: 0 50px;
     height: 100px;
+    border-radius: 8px;
+    padding: 10px 20px;
 }
 
 .Title {
@@ -19,13 +21,13 @@
 
 .ButtonContainer {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .BannerButton {
-    background-color: #99b378;
+    background-color: #7899b3;
     color: #fff;
-    font-family: impact, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     font-weight: bold;
     border: none;
@@ -36,5 +38,32 @@
 }
 
 .BannerButton:hover {
-    background-color: #7a944e;
+    background-color: #78b392;
 }
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #000;
+    margin: 5% 0px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
