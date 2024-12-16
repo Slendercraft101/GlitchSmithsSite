@@ -5,12 +5,36 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Title and buttons space */
+    padding: 0 50px; /* Adds pspacing for banner */
     height: 100px;
 }
 
 .Title {
     color: #fff;
-    margin-left: 10px;
     font-size: 44px;
     font-family: impact;
+    margin: 0;
+}
+
+.ButtonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.BannerButton {
+    background-color: #99b378;
+    color: #fff;
+    font-family: impact, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BannerButton:hover {
+    background-color: #7a944e;
 }
