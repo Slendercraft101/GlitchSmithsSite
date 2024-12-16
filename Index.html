@@ -18,7 +18,14 @@
         <h2>Buy, Sell, And Browse Tools</h2>
     </div>
     <div class="Main">
-        Drop down here
+        <label for="category-dropdown">Select Category: </label>
+        <select id="category-dropdown">
+            <option value="all">All</option>
+            <option value="1">Category 1</option>
+            <option value="2">Category 2</option>
+            <option value="3">Category 3</option>
+        </select>
+        
         <div class="gallery">
             <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" class="1">
             <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" class="1">
@@ -31,5 +38,25 @@
             <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg" class="3">
         </div>
     </div>
+
+    <script>
+        // Get dropdown and gallery images
+        const dropdown = document.getElementById('category-dropdown');
+        const images = document.querySelectorAll('.gallery img');
+
+        // Event listener for dropdown change
+        dropdown.addEventListener('change', function() {
+            const selectedCategory = this.value;
+
+            // Show or hide images based on selected category
+            images.forEach(image => {
+                if (selectedCategory === 'all' || image.classList.contains(selectedCategory)) {
+                    image.style.display = 'block';
+                } else {
+                    image.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
