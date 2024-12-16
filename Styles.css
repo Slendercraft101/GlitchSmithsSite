@@ -1,0 +1,16 @@
+.Banner {
+    background-color: #7899b3;
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.Title {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 44px;
+    font-family: impact;
+}
