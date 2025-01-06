@@ -71,7 +71,7 @@ h2 {
 }
 
 .DropdownButton::after {
-    content: " ▼"; /* Adds a downward arrow */
+    content: " ▼";
     font-size: 18px;
     margin-left: 8px;
 }
@@ -80,7 +80,6 @@ h2 {
     background-color: #78b3af;
 }
 
-/* Dropdown menu */
 #category-dropdown {
     display: none;
     position: absolute;
@@ -121,13 +120,13 @@ h2 {
 }
 
 .gallery a {
-    display: inline-block; /* Ensures items behave correctly within flexbox */
+    display: inline-block;
     width: 100%;
     max-width: 350px;
     height: 300px;
     border-radius: 10px;
-    overflow: hidden; /* Ensures the image's border-radius applies */
-    text-decoration: none; /* Removes underline for links */
+    overflow: hidden;
+    text-decoration: none;
     transition: transform 0.3s ease;
 }
 
@@ -138,17 +137,9 @@ h2 {
     display: block;
 }
 
-.overlay a:hover img {
-    overflow: hidden;
-    transform: scale(1.05);
-    background: #fff;
-    color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    border-radius: 10px;
-    transition: opacity 0.3s ease;
+.gallery a:hover img {
+    transform: scale(1.05); /* Scales the image slightly */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .Select {
