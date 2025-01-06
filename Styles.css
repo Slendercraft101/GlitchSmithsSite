@@ -138,8 +138,8 @@ h2 {
 }
 
 .gallery a:hover img {
-    transform: scale(1.05); /* Scales the image slightly */
-    transition: transform 0.3s ease; /* Smooth transition */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .Select {
