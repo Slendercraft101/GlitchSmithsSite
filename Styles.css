@@ -87,7 +87,9 @@ h2 {
     background-color: #7899b3;
     width: 200px;
     border-radius: 8px;
-    margin-left: 45%;
+    margin: 0 auto;
+    margin-left: 43.5%;
+    margin-top: 272px;
 }
 
 .dropdown-item {
@@ -136,6 +138,32 @@ h2 {
     display: block;
 }
 
-.gallery a:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
+.overlay a:hover img {
+    overflow: hidden;
+    transform: scale(1.05);
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.Select {
+    background-color: #7899b3;
+    width: 75%;
+    margin: 160px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.White-Banner {
+    font-family: Impact;
+    font-size: 50px;
+    color: #7899b3;
 }
