@@ -1,5 +1,9 @@
+body {
+    background-color: #fff;
+}
+
 .Banner {
-    background-color: #7899b3;
+    background-color: #0a0a23;
     width: 75%;
     margin: 0 auto;
     position: relative;
@@ -13,7 +17,7 @@
 }
 
 .Title {
-    color: #fff;
+    color: #fdb347;
     font-size: 44px;
     font-family: impact;
     margin: 0;
@@ -24,8 +28,13 @@
     gap: 15px;
 }
 
+u {
+    color: #fdb347;
+    font-weight: bold;
+}
+
 .BannerButton {
-    background-color: #7899b3;
+    background-color: #fdb347;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
@@ -38,7 +47,7 @@
 }
 
 .BannerButton:hover {
-    background-color: #78b3af;
+    background-color: #d4973d;
 }
 
 h2 {
@@ -54,7 +63,7 @@ h2 {
 }
 
 .DropdownButton {
-    background-color: #7899b3;
+    background-color: #fdb347;
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
@@ -77,13 +86,13 @@ h2 {
 }
 
 .DropdownButton:hover {
-    background-color: #78b3af;
+    background-color: #d4973d;
 }
 
 #category-dropdown {
     display: none;
     position: absolute;
-    background-color: #7899b3;
+    background-color: #0a0a23;
     width: 200px;
     border-radius: 8px;
     margin: 0 auto;
@@ -92,7 +101,7 @@ h2 {
 }
 
 .dropdown-item {
-    background-color: #7899b3;
+    background-color: #0a0a23;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
@@ -135,6 +144,8 @@ h2 {
     height: 100%;
     object-fit: cover;
     display: block;
+    outline: 5px solid #fdb347;
+    border-radius: 10px;
 }
 
 .gallery a:hover img {
@@ -142,8 +153,13 @@ h2 {
     transition: transform 0.3s ease;
 }
 
+.gallery-item {
+    outline: 3px solid #fdb347;
+    border-radius: 10px;
+}
+
 .Select {
-    background-color: #7899b3;
+    background-color: #0a0a23;
     width: 75%;
     margin: 160px auto;
     position: relative;
@@ -156,5 +172,5 @@ h2 {
 .White-Banner {
     font-family: Impact;
     font-size: 50px;
-    color: #7899b3;
+    color: #fdb347;
 }
